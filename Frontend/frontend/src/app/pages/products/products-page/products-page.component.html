@@ -1,0 +1,66 @@
+<div class="flex h-full">
+    <frnd-menu></frnd-menu>
+    <div class="grid grid-cols-12 w-full auto-rows-max gap-4 py-4 px-8">
+
+        <div class="grid col-span-12">
+
+            <h1>Productos</h1>
+
+        </div>
+
+        <div class="grid col-span-12">
+            <div class="overflow-x-auto">
+                <table class="table table-xs">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>NOMBRE</th>
+                            <th>GUID</th>
+                            <th>Fecha Creación</th>
+                            <th>Fecha Actualización</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let d of data">
+                            <td>{{ d.id }}</td>
+                            <td>{{ d.name }}</td>
+                            <td>{{ d.guid }}</td>
+                            <td>{{ d.createdDate }}</td>
+                            <td>{{ d.updatedDate }}</td>
+                        </tr>
+                        <!--
+                        <tr>
+                            <td>1</td>
+                            <td>Whiskey Johnny Walker</td>
+                            <td>123e4567-e98b-12d3-a456-426614174001</td>
+                            <td>2024-09-01</td>
+                            <td>2024-10-15</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Coca-Cola</td>
+                            <td>987f6543-b21a-65d7-a876-42361417123</td>
+                            <td>2024-08-20</td>
+                            <td>2024-10-16</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Cóctel Margarita</td>
+                            <td>567g8901-c34d-98f7-a765-127614172345</td>
+                            <td>2024-09-01</td>
+                            <td>2024-10-16</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Vodka Absolut</td>
+                            <td>234d6789-f12g-34h6-b89k-547698126789</td>
+                            <td>2024-07-15</td>
+                            <td>2024-10-16</td>
+                        </tr>
+                        -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
